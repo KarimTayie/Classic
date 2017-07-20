@@ -1,4 +1,6 @@
-echo "classic.karimtayie.me" > CNAME  
-git add -A  
-git commit -m “Added CNAME file.”  
-git push origin master  
+$ echo 'classic.karimtayie.me' > CNAME
+$ git add .
+$ git commit -m 'Add a custom domain'
+...
+$ git push
+...
