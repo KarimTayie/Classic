@@ -1,45 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="UTF-8" />
+        <!-- IE Compatibility Meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- First Mobile Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Classic</title>
         <!-- bxSlider CSS File -->
         <link href="css/jquery.bxslider.min.css" rel="stylesheet" />
         <!-- Fonts Files -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
         <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet" />
         <!-- My CSS Files -->
-        <link href="css/normalize.css" rel="stylesheet" />
-        <link href="css/web.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
+       
+        <!-- Start Our Navbar -->
         
-        <!-- Start Navigation Bar -->
-        
-        <div class="navbar">
+        <nav role="navigation">
             <div class="container">
-                <div class="brand">
-                    <h2>Classic</h2>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Classic</a>
                 </div>
-                <ul class="links">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#" data-value="ser">About</a></li>
-                    <li><a href="#" data-value="test">Testimonials</a></li>
-                    <li><a href="#" data-value="port">Portfolio</a></li>
-                    <li><a href="#" data-value="cont">Contact</a></li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-        </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#" data-value="ser">About</a></li>
+                <li><a href="#" data-value="test">Testimonials</a></li>
+                <li><a href="#" data-value="port">Portfolio</a></li>
+                <li><a href="#" data-value="cont">Contact Me</a></li>
+              </ul>
+            </div>  
+          </div> <!-- End Of The Container -->
+        </nav>
         
-        <!-- End Navigation Bar -->
+        <!-- End Our Navbar -->
         
         <!-- Start Header -->
         
-        <div class="header">
+        <section class="header text-center">
             <span>Read More</span>
             <div class="overlay">
-                <ul class="bxslider">
+                <ul class="bxslider hidden-xs hidden-sm">
                     <li>
                         <h2>Welcome To  The <span>Classic</span></h2>
                         <p>Mauris non sapien eget dolor ultricies auctor eget non est. Donec sed ligula ipsum. Aliquam dignissim hendrerit velit.</p>
@@ -58,95 +75,99 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
         
         <!-- End Header -->
         
         <!-- Start Our Services -->
         
-        <div id="ser" class="services">
+        <section id="ser" class="services">
             <div class="container">
-                <h2 class="special-heading">Our Services</h2>
-                <div class="item">
-                    <i class="fa fa-mobile fa-5x fa-fw" aria-hidden="true"></i>
-                    <div class="info">
-                        <h3>Responsive Layout</h3>
-                        <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                <div class="row">
+                    <h2 class="special-heading">Our Services</h2>
+                    <div class="item col-lg-4 col-sm-6 col-xs-12">
+                        <i class="fa fa-mobile fa-5x fa-fw" aria-hidden="true"></i>
+                        <div class="info">
+                            <h3>Responsive Layout</h3>
+                            <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="cloud"></div>
-                    <div class="info">
-                        <h3>Cloud Services</h3>
-                        <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                    <div class="item col-lg-4 col-sm-6 col-xs-12">
+                        <div class="cloud img-responsive center-block"></div>
+                        <div class="info">
+                            <h3>Cloud Services</h3>
+                            <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <i class="fa fa-lightbulb-o fa-4x fa-fw" aria-hidden="true"></i>
-                    <div class="info">
-                        <h3>Fresh &amp; Right Ideas</h3>
-                        <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                    <div class="item col-lg-4 col-sm-6 col-xs-12">
+                        <i class="fa fa-lightbulb-o fa-4x fa-fw" aria-hidden="true"></i>
+                        <div class="info">
+                            <h3>Fresh &amp; Right Ideas</h3>
+                            <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <i class="fa fa-envelope-o fa-4x fa-fw" aria-hidden="true"></i>
-                    <div class="info">
-                        <h3>Attachments</h3>
-                        <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                    <div class="item col-lg-4 col-sm-6 col-xs-12">
+                        <i class="fa fa-envelope-o fa-4x fa-fw" aria-hidden="true"></i>
+                        <div class="info">
+                            <h3>Attachments</h3>
+                            <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="video"></div>
-                    <div class="info">
-                        <h3>Support Video</h3>
-                        <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                    <div class="item col-lg-4 col-sm-6 col-xs-12">
+                        <div class="video img-responsive center-block"></div>
+                        <div class="info">
+                            <h3>Support Video</h3>
+                            <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <i class="fa fa-heart-o fa-4x fa-fw" aria-hidden="true"></i>
-                    <div class="info">
-                        <h3>Lovely Design</h3>
-                        <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                    <div class="item col-lg-4 col-sm-6 col-xs-12">
+                        <i class="fa fa-heart-o fa-4x fa-fw" aria-hidden="true"></i>
+                        <div class="info">
+                            <h3>Lovely Design</h3>
+                            <p>Nam vel eleifend que fusce consequat pretium velit vitae. Vulputate nullam pharetra lorem laoreet. Etiam sollicitudin magna nullam.</p>
+                        </div>
                     </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="clearfix"></div>
             </div>
-        </div>
+        </section>
         
         <div class="container">
             <hr class="separator">
         </div>
         
-        <div class="our-team">
+        <section class="our-team">
             <div class="container">
-                <div class="box">
-                    <h2 class="special-heading">Our Team</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus facilisis, placerat magna sit amet, rhoncus lacus. Cras porta eget nibh vel vehicula. Phasellus ullamcorper odio sit amet felis congue, id porta sapien tincidunt. Ut id sem malesuada, dapibus.</p>
-                </div>
-                <div class="box">
-                    <div class="overlay special-heading">
-                        Ashley Cady
+                <div class="row">
+                    <div class="box col-md-5">
+                        <h2 class="special-heading">Our Team</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a lacus facilisis, placerat magna sit amet, rhoncus lacus. Cras porta eget nibh vel vehicula. Phasellus ullamcorper odio sit amet felis congue, id porta sapien tincidunt. Ut id sem malesuada, dapibus.</p>
                     </div>
-                    <img src="images/Layer%204.png" alt="Image1" />
+                    <div class="box col-md-1">
+                        <div class="overlay special-heading">
+                            Ashley Cady
+                        </div>
+                        <img class="img-responsive center-block" src="images/Layer%204.png" alt="Image1" />
+                    </div>
+                    <div class="box col-md-1">
+                        <img class="img-responsive center-block" src="images/Layer%205.png" alt="Image2" />
+                    </div>
+                    <div class="box col-md-1">
+                        <img class="img-responsive center-block" src="images/Layer%206.png" alt="Image3" />
+                    </div>
+                    <div class="box col-md-1">
+                        <img class="img-responsive center-block" src="images/Layer%207.png" alt="Image4" />
+                    </div>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="box">
-                    <img src="images/Layer%205.png" alt="Image2" />
-                </div>
-                <div class="box">
-                    <img src="images/Layer%206.png" alt="Image3" />
-                </div>
-                <div class="box">
-                    <img src="images/Layer%207.png" alt="Image4" />
-                </div>
-                <div class="clearfix"></div>
             </div>
-        </div>
+        </section>
         
         <!-- End Our Services -->
         
         <!-- Start Testimonials -->
         
-        <div id="test" class="testim">
+        <section id="test" class="testim text-center">
             <div class="container">
                 <h2>What Our Clients Say</h2>
                 <div class="slider">
@@ -168,13 +189,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
         <!-- End Testimonials -->
         
         <!-- Start Projects -->
         
-        <div id="port" class="our-projects">
+        <section id="port" class="our-projects">
             <div class="container">
                 <h2 class="special-heading">Projects</h2>
                 <ul class="shuffle">
@@ -184,113 +205,127 @@
                     <li class="filter" data-filter=".vid">Video</li>
                     <li class="filter" data-filter=".fashion">Fashion</li>
                 </ul>
-                <div id="container" class="gallery">
-                    <div class="row">
-                        <div class="mix mobile">
+                <div class="row">
+                    <div id="container" class="gallery">
+                        <div class="mix mobile col-md-3 col-xs-5">
                             <div class="over"><span>View more</span></div>
                             <span class="heart">
                                 <i class="fa fa-heart"></i> 14
                             </span>
                             <img src="images/1.png" alt="" />
                         </div>
-                        <div class="mix coffee">
+                        <div class="mix coffee col-md-3 col-xs-5">
                             <div class="over"><span>View more</span></div>
                             <span class="heart">
                                 <i class="fa fa-heart"></i> 14
                             </span>
                             <img src="images/2.png" alt="" />
                         </div>
-                        <div class="mix vid">
+                        <div class="mix vid col-md-3 col-xs-5">
                             <div class="over"><span>View more</span></div>
                             <span class="heart">
                                 <i class="fa fa-heart"></i> 14
                             </span>
-                            <img src="images/3.png" alt="" />
+                            <img class="img-responsive center-block" src="images/3.png" alt="" />
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="mix coffee">
+                        <div class="mix coffee col-md-3 col-xs-5">
                             <div class="over"><span>View more</span></div>
                             <span class="heart">
                                 <i class="fa fa-heart"></i> 14
                             </span>
-                            <img src="images/4.png" alt="" />
+                            <img class="img-responsive center-block" src="images/4.png" alt="" />
                         </div>
-                        <div class="mix mobile">
+                        <div class="mix mobile col-md-3 col-xs-5">
                             <div class="over"><span>View more</span></div>
                             <span class="heart">
                                 <i class="fa fa-heart"></i> 14
                             </span>
-                            <img src="images/5.png" alt="" />
+                            <img class="img-responsive center-block" src="images/5.png" alt="" />
                         </div>
-                        <div class="mix fashion">
+                        <div class="mix fashion col-md-3 col-xs-5">
                             <div class="over"><span>View more</span></div>
                             <span class="heart">
                                 <i class="fa fa-heart"></i> 14
                             </span>
-                            <img src="images/6.png" alt="" />
+                            <img class="img-responsive center-block" src="images/6.png" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
         <!-- End Projects -->
         
         <!-- Start Footer -->
         
-        <div class="footer">
+        <section class="footer">
             <div class="container">
-                <div class="col">
-                    <h3>About Classic</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis sed odio ut tempus. Curabitur nec ultricies tortor. Ut fringilla feugiat ligula.</p>
-                    <div>
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-google-plus"></i>
-                        <i class="fa fa-twitter"></i>
+                <div class="row">
+                    <div class="col col-md-3">
+                        <h3>About Classic</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis sed odio ut tempus. Curabitur nec ultricies tortor. Ut fringilla feugiat ligula.</p>
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-google-plus"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <h3>Tags</h3>
-                    <span>Html</span>
-                    <span>Css</span>
-                    <span>Photoshop</span>
-                    <span>Responsive</span>
-                    <span>Art</span>
-                </div>
-                <div class="col">
-                    <h3>Recent Posts</h3>
-                    <div class="posts">
-                        <img src="images/item%201.png" alt="" />
-                        <p>How to Get Rid of Ants <br/> <span>June, 2014</span> </p>
+                    <div class="col col-md-3">
+                        <h3>Tags</h3>
+                        <span>Html</span>
+                        <span>Css</span>
+                        <span>Photoshop</span>
+                        <span>Responsive</span>
+                        <span>Art</span>
                     </div>
-                    <div class="posts">
-                        <img src="images/item%202.png" alt="" />
-                        <p>Why I'm running <br/> <span>July, 2014</span> </p>
+                    <div class="col col-md-3">
+                        <h3>Recent Posts</h3>
+                        <div class="posts">
+                            <img src="images/item%201.png" />
+                            <p class="hidden-xs hidden-sm">How to Get Rid of Ants <br/> <span>June, 2017</span> </p>
+                        </div>
+                        <div class="posts">
+                            <img src="images/item%202.png" />
+                            <p class="hidden-xs hidden-sm">Why I'm running <br/> <span>July, 2017</span> </p>
+                        </div>
+                        <div class="posts">
+                            <img src="images/item%203.png" />
+                            <p class="hidden-xs hidden-sm">Casella Waste <br/> <span>August, 2017</span> </p>
+                        </div>
                     </div>
-                    <div class="posts">
-                        <img src="images/item%203.png" alt="" />
-                        <p>Casella Waste <br/> <span>August, 2014</span> </p>
+                    <div class="col col-md-3">
+                        <h3>Blog Categories</h3>
+                        <h4>Agency</h4>
+                        <h4>Business</h4>
+                        <h4>Multi Purpose</h4>
+                        <h4>Audio</h4>
                     </div>
+                    <div class="clearfix"></div>
+                    <div>Copyright &copy; 2017 All Right Reserved</div>
                 </div>
-                <div class="col">
-                    <h3>Blog Categories</h3>
-                    <h4>Agency</h4>
-                    <h4>Business</h4>
-                    <h4>Multi Purpose</h4>
-                    <h4>Audio</h4>
-                </div>
-                <div class="clearfix"></div>
-                <div>Copyright &copy; 2017 All Right Reserved</div>
             </div>
-        </div>
+        </section>
         
         <!-- End Footer -->
+        
+        <!-- Start Loading Section -->
+        
+        <section class="loading-overlay">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+        </section>
+        
+        <!-- End Loading Section -->
         
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/jquery.bxslider.min.js"></script>
         <script src="js/jquery.mixitup.min.js"></script>
         <script src="js/jquery.nicescroll.min.js"></script>
-        <script src="js/custom.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
     </body>
 </html>
