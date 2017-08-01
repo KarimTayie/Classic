@@ -413,8 +413,8 @@ nav .navbar-brand {
     left: 0;
     bottom: 0;
     right: 0;
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     line-height: 220px;
     font-size: 15px;
     font-weight: normal;
@@ -438,8 +438,7 @@ nav .navbar-brand {
 
 .our-projects #container .mix{
 	display: none;
-    padding: 0;
-    min-width: 370px
+    padding: 0
 }
 
 /* End Projects */
@@ -694,13 +693,53 @@ nav .navbar-brand {
 
 /* End Loading Section */
 
+/* Very Small Screen */
+
+@media (max-width: 768px) 
+{
+    html {
+        overflow-y: hidden;
+        overflow-x: hidden
+    }
+    
+    .testim h2:after {
+        left: -320px
+    }
+    
+    .testim blockquote {
+        padding: 0
+    }
+    
+    .testim p {
+        margin-top: 50px
+    }
+    
+    .our-projects {
+        height: 560px
+    }
+    
+    .our-projects .row .gallery > div .over {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 70%
+    }
+    
+    .our-projects .img-responsive {
+        max-width: 70%
+    }
+    
+    .footer .row > div:last-child {
+        padding-left: 15px
+    }
+}
+
 /* Small Screen */
 
 @media (min-width: 768px) and (max-width: 991px)
 {
     html {
         overflow-y: hidden;
-        overflow-x: hidden;
+        overflow-x: hidden
     }
     
     nav .navbar-nav > li {
