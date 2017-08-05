@@ -86,15 +86,19 @@ nav .navbar-brand {
 
 .header > span {
     position: absolute;
-    text-align: center;
-    right: 44%;
-    top: 80%;
-    padding: 20px;
+    padding: 15px;
     display: inline-block;
     border: 2px solid #FFF;
     color: #FFF;
     text-transform: uppercase;
-    z-index: 3
+    z-index: 3;
+    top: 80%;
+    left: 50%;
+    margin-top: -30px; 
+    margin-left: -75px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer
 }
 
 .header .overlay {
@@ -241,7 +245,7 @@ nav .navbar-brand {
     padding: 0px 30px 20px;
     margin-bottom: 20px
 }
-
+/*
 .our-team .box {
     float: left
 }
@@ -256,7 +260,7 @@ nav .navbar-brand {
     width: 16.25%;
     text-align: right
 }
-
+*/
 .our-team .box:not(first-child) {
     position: relative
 }
@@ -316,11 +320,13 @@ nav .navbar-brand {
     content: "";
     display: block;
     position: absolute;
-    top: 40px;
-    left: 0;
+    top: 115%;
+    left: 34%;
     width: 40px;
+    height: 5px;
     border-bottom: 2px solid #FFF;
-    margin: 0 490px
+    margin-left: -20px;
+    margin-top: -2.5px
 }
 
 .testim blockquote {
@@ -451,36 +457,37 @@ nav .navbar-brand {
     padding: 40px 0;
     overflow: hidden
 }
-
-.footer .col {
+/*
+.footer .foot {
     width: 23%;
     margin-right: 2.667%;
     float: left;
     background:
 }
 
-.footer .col:nth-child(4) {
+.footer .foot:nth-child(4) {
     margin-right: 0
-}
+}*/
 
-.footer .col h3 {
+.footer .foot h3 {
     color: #FFF
 }
 
-.footer .col > p {
+.footer .foot > p {
     line-height: 1.4
 }
 
-.footer .col i {
-    width: 15%;
-    padding: 8px;
-    margin: 2%;
+.footer .foot i {
+    width: 40px;
+    /*height: 20px;*/
+    padding: 10px;
+    margin-right: 10px;
     border: 1px solid #6C6C6C;
     text-align: center;
     margin-bottom: 20px
 }
 
-.footer .col > span {
+.footer .foot > span {
     margin-right: 6px;
     margin-top: 8px;
     padding: 5px;
@@ -489,11 +496,11 @@ nav .navbar-brand {
     text-transform: uppercase
 }
 
-.footer .col .posts {
+.footer .foot .posts {
     position: relative
 }
 
-.footer .col .posts p {
+.footer .foot .posts p {
     position: absolute;
     display: inline-block;
     margin: -2px 10px;
@@ -501,15 +508,15 @@ nav .navbar-brand {
     color:#FFF
 }
 
-.footer .col .posts span {
+.footer .foot .posts span {
     color: #6C6C6C
 }
 
-.footer .col .posts img {
+.footer .foot .posts img {
     margin-bottom: 10px
 }
 
-.footer .col h4 {
+.footer .foot h4 {
     border-bottom: 2px solid #6C6C6C;
     padding-bottom: 10px
 }
@@ -545,45 +552,6 @@ nav .navbar-brand {
 
 /* End My Framework */
 
-/* Smart Pones And Tablets */
-
-@media (max-width: 767px)
-{
-    .navbar-nav > li > a 
-    {
-        padding-top: 10px;
-        padding-bottom: 10px
-    }
-    
-    .navbar-collapse,
-    .navbar-collapse
-    {
-        max-height: none
-    }
-    
-    .bx-wrapper .bx-next,
-    .bx-wrapper .bx-prev {
-        display: none
-    }
-    
-    .our-projects #container .mix {
-        margin-left: 8px;
-        margin-right: 0;
-    }
-    
-    .row {
-        margin-right: -10px
-    }
-    
-    .footer {
-        margin-top: 160px
-    }
-    
-    .footer .col i {
-        padding: 1px
-    }
-}
-
 /* Start Loading Section */
 
 .loading-overlay {
@@ -602,9 +570,6 @@ nav .navbar-brand {
   left: 50%;
   margin-top: -40px;
   margin-left: -40px;
-    
-  /* margin: 20px auto; */
-    
   width: 80px;
   height: 80px;
   position: relative;
@@ -695,15 +660,31 @@ nav .navbar-brand {
 
 /* Very Small Screen */
 
-@media (max-width: 768px) 
+@media (max-width: 767px) 
 {
-    html {
-        overflow-y: hidden;
-        overflow-x: hidden
+    body {
+        overflow: hidden !important
     }
     
-    .testim h2:after {
-        left: -320px
+    .navbar-nav > li > a 
+    {
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+    
+    .navbar-collapse,
+    .navbar-collapse
+    {
+        max-height: none
+    }
+    
+    .bx-wrapper .bx-next,
+    .bx-wrapper .bx-prev {
+        display: none
+    }
+    
+    .row {
+        margin-right: -10px
     }
     
     .testim blockquote {
@@ -728,8 +709,36 @@ nav .navbar-brand {
         max-width: 70%
     }
     
+    .our-projects #container .mix {
+        margin-left: 8px;
+        margin-right: 0;
+    }
+    
+    .our-team .box {
+        margin-bottom: 30px
+    }
+    
+    .testim blockquote {
+        color: #a6a4a5;
+        padding: 0px;
+        line-height: 1.4;
+        border: 0
+    }
+    
+    .testim {
+        height: 600px;
+        padding: 60px 60px;
+        color: #FFF
+    }
+    
     .footer .row > div:last-child {
-        padding-left: 15px
+        padding-left: 15px;
+        margin-top: 15px
+    }
+    
+    .footer {
+        margin-top: 160px;
+        text-align: center
     }
 }
 
@@ -737,9 +746,8 @@ nav .navbar-brand {
 
 @media (min-width: 768px) and (max-width: 991px)
 {
-    html {
-        overflow-y: hidden;
-        overflow-x: hidden
+    body {
+        overflow: hidden !important
     }
     
     nav .navbar-nav > li {
@@ -762,22 +770,22 @@ nav .navbar-brand {
         margin-left: 0 !important
     }
     
+    .our-team .box p {
+        margin-bottom: 30px
+    }
+    
     .footer {
         margin-top: 160px
     }
     
-    .footer .col i {
-        padding: 1px
-    }
 }
 
 /* Medium Screen */
 
 @media (min-width: 992px) and (max-width: 1199px)
 {
-    html {
-        overflow-y: hidden;
-        overflow-x: hidden;
+    body {
+        overflow: hidden !important
     }
     
     .our-projects .row {
@@ -807,8 +815,7 @@ nav .navbar-brand {
 
 @media (min-width: 1200px)
 {
-    html {
-        overflow-y: hidden;
-        overflow-x: hidden;
+    body {
+        overflow: hidden !important
     }
 }
