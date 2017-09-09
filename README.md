@@ -1,1 +1,1 @@
-# classic.github.io
+# Classic
