@@ -11206,13 +11206,15 @@ nav .navbar-brand {
 
 .testim h2 {
     position: relative;
+    width: 300px;
+    margin: auto;
     margin-bottom: 80px
 }
 
 .testim h2:after {
     position: absolute;
     top: 115%;
-    left: 34%;
+    left: 30px;
     width: 40px;
     height: 5px;
     margin-left: -20px;
